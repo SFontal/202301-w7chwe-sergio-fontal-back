@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "start": "node dist",
+    "build": "tsc",
+    "build:dev": "tsc --watch"
   },
   "keywords": [],
   "author": "",
