@@ -1,1 +1,3 @@
-import "./loadEnvirontment.js";
+import express from "express";
+
+export const app = express();
