@@ -1,9 +1,9 @@
 import { app } from "../index.js";
 import createDebug from "debug";
-import type { CustomError } from "../../CustomError/CustomError.js";
+import type CustomError from "../../CustomError/CustomError.js";
 
 const debug = createDebug("app:startServer");
-export const startServer = async (port: number) =>
+const startServer = async (port: number) =>
   new Promise((resolve) => {
     const server = app.listen(port, () => {
       debug(
@@ -29,3 +29,5 @@ export const startServer = async (port: number) =>
       }
     });
   });
+
+export default startServer;
