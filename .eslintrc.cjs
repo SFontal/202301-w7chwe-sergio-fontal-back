@@ -12,6 +12,12 @@ module.exports = {
         "@typescript-eslint/consistent-type-definitions": "off",
       },
     },
+    {
+      files: ["src/**/models/**/*.ts"],
+      rules: {
+        "@typescript-eslint/naming-convention": "off",
+      },
+    },
   ],
   parserOptions: {
     ecmaVersion: "latest",
